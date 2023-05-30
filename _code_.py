@@ -8,8 +8,9 @@ def gettime():
     time = datetime.date.today()
     return str(time)
 
+#Update password and database details before running......
 import mysql.connector
-con = mysql.connector.connect(user='root',host='localhost', password='va@051206',database='tourist', )
+con = mysql.connector.connect(user='root',host='localhost', password=%s,database=%s, )
 
 def touristdetails():
     c = con.cursor()
